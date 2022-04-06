@@ -1,4 +1,6 @@
 # Mongoose Movies 🎥
+[![Status overview badge](../../blob/badges/.github/badges/autograding/badge.svg)](#results)
+
 
 In this assignment you will be expected to write an API for connecting to a movie database
 
@@ -255,3 +257,66 @@ We will update our comments endpoint to return the populated movie data
 1. Update the `/searchById` endpoint to use the `populate()` method on the `movie_id` field.
 
 2. Test that your endpoint gives you the correct result
+
+[//]: # (autograding info start)
+## Results
+
+
+### Task 2:check `.env` file.
+
+|                 Status                  | Check                                                                                    |
+| :-------------------------------------: | :--------------------------------------------------------------------------------------- |
+| ![Status](../../blob/badges/.github/badges/autograding/status0.svg) | 1.process.env.DB_USER,process.env.DB_PASS,process.env.DB_HOST,process.env.DB_NAME should be used |
+
+### Task.4 Movies Schema & Model.
+
+|                 Status                  | Check                                                                                    |
+| :-------------------------------------: | :--------------------------------------------------------------------------------------- |
+| ![Status](../../blob/badges/.github/badges/autograding/status1.svg) | 1.models Folder should be exist. |
+| ![Status](../../blob/badges/.github/badges/autograding/status2.svg) | 2.MovieSchema Schema should be defined |
+| ![Status](../../blob/badges/.github/badges/autograding/status3.svg) | 3.model should be created |
+
+### Task.6 Creating the Movies route
+
+|                 Status                  | Check                                                                                    |
+| :-------------------------------------: | :--------------------------------------------------------------------------------------- |
+| ![Status](../../blob/badges/.github/badges/autograding/status4.svg) | 1.Create the file `movies.js` in the folder `routes` |
+| ![Status](../../blob/badges/.github/badges/autograding/status5.svg) | 2.Express should be imported |
+| ![Status](../../blob/badges/.github/badges/autograding/status6.svg) | 3.Router instance should be created |
+| ![Status](../../blob/badges/.github/badges/autograding/status7.svg) | 4.Router should be exported |
+| ![Status](../../blob/badges/.github/badges/autograding/status8.svg) | 5.route should be imported into server.js |
+| ![Status](../../blob/badges/.github/badges/autograding/status9.svg) | 6.app.use() should be used to use movies router and path /movies should be used  |
+
+### Task.9 Creating the Comments route
+
+|                 Status                  | Check                                                                                    |
+| :-------------------------------------: | :--------------------------------------------------------------------------------------- |
+| ![Status](../../blob/badges/.github/badges/autograding/status10.svg) | 1.Create the file `comments.js` in the folder `routes` |
+| ![Status](../../blob/badges/.github/badges/autograding/status11.svg) | 2.Express should be imported |
+| ![Status](../../blob/badges/.github/badges/autograding/status12.svg) | 3.Router instance should be created |
+| ![Status](../../blob/badges/.github/badges/autograding/status13.svg) | 4.Router should be exported |
+| ![Status](../../blob/badges/.github/badges/autograding/status14.svg) | 5.route should be imported into server.js |
+| ![Status](../../blob/badges/.github/badges/autograding/status15.svg) | 6.app.use() should be used to use movies router and path /movies should be used  |
+
+
+
+[🔬 Results Details](https://github.com/E06-2/be-db-movies-rest-api-walaaalkasim/actions)
+
+[📢 Give Feedback or Report Problem](https://docs.google.com/forms/d/e/1FAIpQLSfS8wPh6bCMTLF2wmjiE5_UhPiOEnubEwwPLN_M8zTCjx5qbg/viewform?usp=pp_url&entry.652569746=be-db-movies-rest-api-walaaalkasim&entry.2115011968=https%3A%2F%2Fgithub.com%2FE06-2%2Fbe-db-movies-rest-api-walaaalkasim)
+
+### Debugging your code
+> [reading the test outputs](https://github.com/DCI-EdTech/autograding-setup/wiki/Reading-test-outputs)
+
+There are two ways to see why tasks might not be completed:
+#### 1. Running tests locally
+- Run `npm install`
+- Run `npm test` in the terminal. You will see where your solution differs from the expected result.
+
+#### 2. Inspecting the test output on GitHub
+- Go to the [Actions tab of your exercise repo](https://github.com/E06-2/be-db-movies-rest-api-walaaalkasim/actions)
+- You will see a list of the test runs. Click on the topmost one.
+- Click on 'Autograding'
+- Expand the item 'Run DCI-EdTech/autograding-action@main'
+- Here you see all outputs from the test run
+
+[//]: # (autograding info end)
